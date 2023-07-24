@@ -4,7 +4,7 @@ const inputUserEmail = document.getElementById('user-mail')
 //*Prendo il button dal DOM//
 const buttonSend = document.getElementById('send')
 
-//*Predno lo span dal DOM//
+//*Prendo lo span dal DOM//
 const messageAccess = document.getElementById('message')
 
 //* Ho un Array che contiene una serie di email autorizzate ad accedere//
