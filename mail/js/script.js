@@ -8,7 +8,7 @@ const buttonSend = document.getElementById('send')
 const messageAccess = document.getElementById('message')
 
 //* Ho un Array che contiene una serie di email autorizzate ad accedere//
-const email = ['admin@gmail.com', 'user@gmail.com', 'boolean@gmail.com', 'employee@gmail.com'];
+const emails = ['admin@gmail.com', 'user@gmail.com', 'boolean@gmail.com', 'employee@gmail.com'];
 
 buttonSend.addEventListener('click', function() {
     
@@ -17,10 +17,10 @@ buttonSend.addEventListener('click', function() {
      const userEmail = inputUserEmail.value;
 
     // * Creo ciclo for//
-    for (let i = 0; i < email.length; i++){
-    
+    for (let i = 0; i < emails.length; i++){
+        const email = emails [i]
         //*Controllo tramite **IF** se l'email inserita dall'utente è uguale a quelle presenti nell'array.//
-        if( userEmail == email[i]) {
+        if( userEmail == email) {
             mailFound = 'Email trovata, Benvenuto'
         }
     }
